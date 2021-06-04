@@ -1,12 +1,12 @@
-import type { Web3Provider } from "@ethersproject/providers";
-import { useWeb3React } from "@web3-react/core";
-import useETHBalance from "../hooks/useETHBalance";
+import type { Web3Provider } from '@ethersproject/providers'
+import { useWeb3React } from '@web3-react/core'
+import useETHBalance from '../hooks/useETHBalance'
 
 const ETHBalance = () => {
-  const { account } = useWeb3React<Web3Provider>();
-  const { data } = useETHBalance(account);
+    const { account } = useWeb3React<Web3Provider>()
+    const { data } = useETHBalance(account!)
 
-  return <p>Balance: Ξ{data}</p>;
-};
+    return <p>Balance: Ξ{data}</p>
+}
 
-export default ETHBalance;
+export default ETHBalance

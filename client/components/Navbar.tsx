@@ -38,10 +38,7 @@ const AppNavbar: FC = () => {
     return (
         <StyledNavbar>
             <div>
-                <button
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample"
-                >
+                <button>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
 
